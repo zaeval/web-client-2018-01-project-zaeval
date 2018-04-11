@@ -211,72 +211,72 @@ background: linear-gradient(to right, rgba(16,16,16,0.5) 0%, rgba(16,16,16,0) 10
 }
 
 #second-banner-right-button-check:checked ~ #banner-second {
-    animation-name: fadeInLeft;
+    animation-name: fadeInRight;
     animation-duration: .5s;
     animation-fill-mode: both;
 }
 
 #second-banner-right-button-check:checked ~ #banner-first {
-    animation-name: fadeOutRight;
+    animation-name: fadeOutLeft;
     animation-duration: .5s;
     animation-fill-mode: both;
 }
 
 #first-banner-right-button-check:checked ~ #banner-first {
-    animation-name: fadeInLeft;
+    animation-name: fadeInRight;
     animation-duration: .5s;
     animation-fill-mode: both;
 }
 
 #first-banner-right-button-check:checked ~ #banner-third {
-    animation-name: fadeOutRight;
+    animation-name: fadeOutLeft;
     animation-duration: .5s;
     animation-fill-mode: both;
 }
 
 #third-banner-right-button-check:checked ~ #banner-third {
-    animation-name: fadeInLeft;
+    animation-name: fadeInRight;
     animation-duration: .5s;
     animation-fill-mode: both;
 }
 
 #third-banner-right-button-check:checked ~ #banner-second {
-    animation-name: fadeOutRight;
+    animation-name: fadeOutLeft;
     animation-duration: .5s;
     animation-fill-mode: both;
 }
 #first-banner-left-button-check:checked ~ #banner-first {
-    animation-name: fadeInRight;
+    animation-name: fadeInLeft;
     animation-duration: .5s;
     animation-fill-mode: both;
 }
 
 #first-banner-left-button-check:checked ~ #banner-second {
-    animation-name: fadeOutLeft;
+    animation-name: fadeOutRight;
     animation-duration: .5s;
     animation-fill-mode: both;
 }
 
 #second-banner-left-button-check:checked ~ #banner-second {
-    animation-name: fadeInRight;
+    animation-name: fadeInLeft;
     animation-duration: .5s;
     animation-fill-mode: both;
 }
 
 #second-banner-left-button-check:checked ~ #banner-third {
-    animation-name: fadeOutLeft;
+    animation-name: fadeOutRight;
     animation-duration: .5s;
     animation-fill-mode: both;
 }
 
 #third-banner-left-button-check:checked ~ #banner-third {
-    animation-name: fadeInRight;
+    animation-name: fadeInLeft;
     animation-duration: .5s;
     animation-fill-mode: both;
 }
 
 #third-banner-left-button-check:checked ~ #banner-first {
-    animation-name: fadeOutLeft;
+    animation-name: fadeOutRight;
     animation-duration: .5s;
     animation-fill-mode: both;
 }

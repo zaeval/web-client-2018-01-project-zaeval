@@ -7,8 +7,8 @@
     z-index: 80;
     overflow: hidden;
     background-color: gray;
-
 }
+
 .nav-banner article img{
     position:relative;
 }
@@ -51,9 +51,7 @@ background: linear-gradient(to right, rgba(16,16,16,0.5) 0%, rgba(16,16,16,0) 10
     background: linear-gradient(to left, rgba(16,16,16,0.5) 0%, rgba(16,16,16,0) 100%);
 }
 
-img{
-    max-width: 100%;
-}
+
 #first-banner-right-button,
 #third-banner-right-button {
     display: none;
@@ -354,4 +352,13 @@ img{
     display: inline-block;
     position: absolute;
     left: 0;
+}
+
+.nav-banner img{
+    max-width: 100%;
+    transition:.4s;
+}
+.nav-banner:hover img{
+    transform: scale(1.1,1.1);
+    transition:.7s;
 }

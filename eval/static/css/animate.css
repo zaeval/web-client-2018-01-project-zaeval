@@ -1,0 +1,72 @@
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(3%, 7%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(3%, 7%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fade-in {
+    animation-name: fadeIn;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInLeft {
+    from {
+        left: -100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        left: 100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes fadeOutLeft {
+    from {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes fadeOutRight {
+    from {
+        left: 0;
+    }
+
+    100% {
+        left: 100%;
+    }
+}

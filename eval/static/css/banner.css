@@ -1,0 +1,357 @@
+.nav-banner article {
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    display: inline-block;
+    position: absolute;
+    z-index: 80;
+    overflow: hidden;
+    background-color: gray;
+
+}
+.nav-banner article img{
+    position:relative;
+}
+.nav-banner {
+    overflow: hidden;
+}
+
+.nav-banner .left-button,
+.nav-banner .right-button
+{
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    vertical-align: middle;
+    display: table;
+    z-index: 100;
+}
+
+.nav-banner .left-button span,
+.nav-banner .right-button span {
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.nav-banner .left-button {
+    left: 0;
+    color: #E8EAF6;
+background: linear-gradient(to right, rgba(16,16,16,0.5) 0%, rgba(16,16,16,0) 100%);
+    
+}
+
+.nav-banner .right-button {
+    right: 0;
+    float: right;
+    
+    color: #E8EAF6;
+    background: linear-gradient(to left, rgba(16,16,16,0.5) 0%, rgba(16,16,16,0) 100%);
+}
+
+img{
+    max-width: 100%;
+}
+#first-banner-right-button,
+#third-banner-right-button {
+    display: none;
+}
+
+#first-banner-left-button,
+#second-banner-left-button {
+    display: none;
+}
+
+.nav-banner input {
+    display: none;
+}
+#second-banner-right-button-check:checked ~ #second-banner-right-button {
+    display: none;
+}
+
+#second-banner-right-button-check:checked ~ #third-banner-left-button {
+    display: none;
+}
+
+#second-banner-right-button-check:checked ~ #first-banner-right-button {
+    display: none;
+}
+
+#second-banner-right-button-check:checked ~ #first-banner-left-button {
+    display: none;
+}
+
+#second-banner-right-button-check:checked ~ #third-banner-right-button {
+    display: table;
+}
+
+#second-banner-right-button-check:checked ~ #second-banner-left-button {
+    display: table;
+}
+
+#first-banner-right-button-check:checked ~ #first-banner-right-button {
+    display: none;
+}
+
+#first-banner-right-button-check:checked ~ #second-banner-left-button {
+    display: none;
+}
+
+#first-banner-right-button-check:checked ~ #third-banner-right-button {
+    display: none;
+}
+
+#first-banner-right-button-check:checked ~ #first-banner-left-button {
+    display: none;
+}
+
+#first-banner-right-button-check:checked ~ #second-banner-right-button {
+    display: table;
+}
+
+#first-banner-right-button-check:checked ~ #third-banner-left-button {
+    display: table;
+}
+
+#third-banner-right-button-check:checked ~ #third-banner-right-button {
+    display: none;
+}
+
+#third-banner-right-button-check:checked ~ #first-banner-left-button {
+    display: none;
+}
+
+#third-banner-right-button-check:checked ~ #second-banner-right-button {
+    display: none;
+}
+
+#third-banner-right-button-check:checked ~ #third-banner-left-button {
+    display: none;
+}
+
+#third-banner-right-button-check:checked ~ #first-banner-right-button {
+    display: table;
+}
+
+#third-banner-right-button-check:checked ~ #second-banner-left-button {
+    display: table;
+}
+
+#first-banner-left-button-check:checked ~ #first-banner-left-button {
+    display: none;
+}
+
+#first-banner-left-button-check:checked ~ #third-banner-right-button {
+    display: none;
+}
+
+#first-banner-left-button-check:checked ~ #second-banner-left-button {
+    display: none;
+}
+
+#first-banner-left-button-check:checked ~ #first-banner-right-button {
+    display: none;
+}
+
+#first-banner-left-button-check:checked ~ #third-banner-left-button {
+    display: table;
+}
+
+#first-banner-left-button-check:checked ~ #second-banner-right-button {
+    display: table;
+}
+
+
+#second-banner-left-button-check:checked ~ #second-banner-left-button {
+    display: none;
+}
+
+#second-banner-left-button-check:checked ~ #first-banner-right-button {
+    display: none;
+}
+
+#second-banner-left-button-check:checked ~ #third-banner-left-button {
+    display: none;
+}
+
+#second-banner-left-button-check:checked ~ #second-banner-right-button {
+    display: none;
+}
+
+#second-banner-left-button-check:checked ~ #first-banner-left-button {
+    display: table;
+}
+
+#second-banner-left-button-check:checked ~ #third-banner-right-button {
+    display: table;
+}
+
+#third-banner-left-button-check:checked ~ #third-banner-left-button {
+    display: none;
+}
+
+#third-banner-left-button-check:checked ~ #second-banner-right-button {
+    display: none;
+}
+
+#third-banner-left-button-check:checked ~ #first-banner-left-button {
+    display: none;
+}
+
+#third-banner-left-button-check:checked ~ #third-banner-right-button {
+    display: none;
+}
+
+#third-banner-left-button-check:checked ~ #second-banner-left-button {
+    display: table;
+}
+
+#third-banner-left-button-check:checked ~ #first-banner-right-button {
+    display: table;
+}
+
+#second-banner-right-button-check:checked ~ #banner-second {
+    animation-name: fadeInLeft;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+#second-banner-right-button-check:checked ~ #banner-first {
+    animation-name: fadeOutRight;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+#first-banner-right-button-check:checked ~ #banner-first {
+    animation-name: fadeInLeft;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+#first-banner-right-button-check:checked ~ #banner-third {
+    animation-name: fadeOutRight;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+#third-banner-right-button-check:checked ~ #banner-third {
+    animation-name: fadeInLeft;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+#third-banner-right-button-check:checked ~ #banner-second {
+    animation-name: fadeOutRight;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+#first-banner-left-button-check:checked ~ #banner-first {
+    animation-name: fadeInRight;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+#first-banner-left-button-check:checked ~ #banner-second {
+    animation-name: fadeOutLeft;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+#second-banner-left-button-check:checked ~ #banner-second {
+    animation-name: fadeInRight;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+#second-banner-left-button-check:checked ~ #banner-third {
+    animation-name: fadeOutLeft;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+#third-banner-left-button-check:checked ~ #banner-third {
+    animation-name: fadeInRight;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+#third-banner-left-button-check:checked ~ #banner-first {
+    animation-name: fadeOutLeft;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+#banner-first {
+    left: 0;
+}
+
+.banner-indicators {
+    border-radius: 3px;
+    background-color: #E8EAF6;
+    width: 20px;
+    height: 8px;
+    display: inline-block;
+    margin-top: 250px;
+    z-index: 100;
+    position: relative;
+    transition: .3s;
+}
+
+#first-banner-right-button-check:checked ~ .banner-indicators:nth-of-type(1) {
+    border-radius: 3px;
+    width: 8px;
+    height: 8px;
+    background-color: #283593;
+    transition: .3s;
+}
+
+#second-banner-right-button-check:checked ~ .banner-indicators:nth-of-type(2) {
+    border-radius: 3px;
+    width: 8px;
+    height: 8px;
+    transition: .3s;    
+    background-color: #283593;
+}
+
+#third-banner-right-button-check:checked ~ .banner-indicators:nth-of-type(3) {
+    border-radius: 3px;
+    width: 8px;
+    height: 8px;
+    transition: .3s;
+    background-color: #283593;
+}
+
+#first-banner-left-button-check:checked ~ .banner-indicators:nth-of-type(1) {
+    border-radius: 3px;
+    width: 8px;
+    height: 8px;
+    transition: .3s;
+    background-color: #283593;
+}
+
+#second-banner-left-button-check:checked ~ .banner-indicators:nth-of-type(2) {
+    border-radius: 3px;
+    width: 8px;
+    height: 8px;
+    transition: .3s;
+    background-color: #283593;
+}
+
+#third-banner-left-button-check:checked ~ .banner-indicators:nth-of-type(3) {
+    border-radius: 3px;
+    width: 8px;
+    height: 8px;
+    transition: .3s;
+    background-color: #283593;
+}
+
+
+.banner-indicators label{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}

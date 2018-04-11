@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            #one:checked ~ #first-div{
+                display: block;
+            } 
+            #two:checked ~ .sibal:nth-of-type(2){
+                display:none;
+            }
+            .sibal{
+                display:block;
+            }
+            div{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        
+        
+        
+        <label id="first" for="one">첫번째</label>
+        <label id="second" for="two">두번째</label>
+        <label id="third" for="three">세번째</label>
+        
+        <input type="radio" name="radios" id="one"/>
+        <input type="radio" name="radios" id="two"/>
+        <input type="radio" name="radios" id="three"/>
+        
+
+        
+        <br>
+        <input type="radio" name="radioss" id="one1" />
+        <input type="radio" name="radioss" id="two1"/>
+        <input type="radio" name="radioss" id="three1"/>
+        
+        <div class="sibal"><label>sibal1</label></div>
+        <div class="sibal"><label>sibal2</label></div>
+        <div class="sibal"><label>sibal3</label></div>
+        
+        <div id="first-div">ㅁㄴㅇㄹ</div>
+        <div id="second-div">ㅁㄴㅇㄹ2</div>
+        <div id="third-div">ㅁㄴㅇㄹ3</div>
+        
+        
+        
+    </body>
+</html>

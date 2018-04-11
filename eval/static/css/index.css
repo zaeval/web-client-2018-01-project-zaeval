@@ -1,14 +1,93 @@
-html,body{
-    height:100%;
-    width:100%;
-    
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
-nav{
-    
+
+nav {
+    margin-top: 100px;
+    text-align: center;
+    z-index: 2;
 }
-header{
-    
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
 }
-.nav-section{
-    width:
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.layout-guideline {
+    border: 1px solid black;
+    background-color: aliceblue;
+}
+
+.nav-section {
+    float: left;
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: 300px;
+}
+
+.box-shadow {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.box-shadow:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.nav-banner {
+    float: left;
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: calc(904px + 4rem);
+}
+
+.horizontal-middle-wrapper {
+    display: inline-block;
+}
+
+.nav-wrapper {
+    width: 1002px;
+}
+
+.delay3 {
+    animation-delay: .3s;
+}
+
+.delay6 {
+    animation-delay: .6s;
+}
+
+.delay9 {
+    animation-delay: .9s;
+}
+
+.delay12 {
+    animation-delay: 1.2s;
+}
+
+.delay15 {
+    animation-delay: 1.5s;
 }

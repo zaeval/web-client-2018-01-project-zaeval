@@ -213,12 +213,12 @@ nav .nav-section:hover .multiline {
 
 @media screen and (max-width: 996px) {
     .nav-wrapper {
-        width: 240px;
+        width: 380px;
     }
     .nav-section {
         margin: 10px;
-        width: 220px;
-        height: 120px;
+        width: 360px;
+        height: 220px;
     }
     .nav-section img{
         transform:scale(1.8,1.8) !important;
@@ -234,8 +234,8 @@ nav .nav-section:hover .multiline {
     .nav-banner {
         margin: 10px;
         position: relative;
-        width: 220px;
-        height: 120px;
+        width: 360px;
+        height: 220px;
     }
     #header-animation-target p{
         margin-top:10px;
@@ -245,15 +245,15 @@ nav .nav-section:hover .multiline {
         height:auto;
     }
     .banner-indicators{
-        margin-top: 100px !important;
+        margin-top: 200px !important;
     }
     .nav-section p{
-        margin-top: calc(50% - 65px) !important;
+        margin-top: calc(50% - 85px) !important;
     }
     .nav-section .two-line{
-        margin-top: calc(50% - 80px) !important;
+        margin-top: calc(50% - 100px) !important;
     }
     footer{
-        font-size: 5px;
+        font-size: 15px;
     }
 }

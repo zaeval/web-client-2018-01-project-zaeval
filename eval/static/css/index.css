@@ -237,6 +237,9 @@ nav .nav-section:hover .multiline {
         width: 360px;
         height: 220px;
     }
+    .nav-banner img{
+        min-height: 100%;
+    }
     #header-animation-target p{
         margin-top:10px;
         font-size: 20px;

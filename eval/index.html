@@ -1,17 +1,24 @@
 <!Doctype html>
 <html>
-    <head>
+
+<head>
     <title>KMUSW 종합정보 시스템</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" href="static/swlogo.png" type="image/png" />
+
     <link rel="stylesheet" href="static/css/login.css" />
+    <link rel="stylesheet" href="static/css/register.css" />
     <link rel="stylesheet" href="static/css/index.css" />
+
     <link rel="stylesheet" media="screen and (max-width: 996px)" href="static/css/index-mobile.css" />
+
+
+    <link rel="stylesheet" href="static/css/material-input.css" />
+    <link rel="stylesheet" href="static/css/function.css" />
     <link rel="stylesheet" href="static/css/animate.css" />
     <link rel="stylesheet" href="static/css/banner.css" />
-    <link rel="stylesheet" href="static/css/function.css" />
 
 
 </head>
@@ -22,19 +29,6 @@
             <p>KMUSW 종합정보 시스템</p>
         </header>
 
-        <input id="function-login" class="function-check" type="checkbox" />
-        <section id="login-session">
-            <label for="function-login" class="function-label">
-            </label>
-                
-                <div class="wraper-floating-session">
-                    <form class="card box-shadow">
-                        <input type="email" hint="이메일" />
-                        <input type="password" hint="패스워드" />
-
-                    </form>
-                </div>
-        </section>
         <nav>
             <div class="horizontal-middle-wrapper nav-wrapper">
                 <section class="nav-banner box-shadow fade-in animated">
@@ -72,9 +66,11 @@
                     </label>
                 </section>
                 <section class="nav-section box-shadow fade-in animated delay6 ">
-                    <div class="filter"></div>
-                    <img src="static/nav_register_img.jpg" />
-                    <p>회원가입</p>
+                    <label class="function-label" for="function-register">
+                        <div class="filter"></div>
+                        <img src="static/nav_register_img.jpg" />
+                        <p>회원가입</p>
+                    </label>
                 </section>
                 <section class="nav-section box-shadow fade-in animated delay9 ">
                     <div class="filter"></div>
@@ -100,7 +96,47 @@
                 </section>
             </div>
         </nav>
+        <input id="function-login" class="function-check" type="checkbox" />
+        <input id="function-register" class="function-check" type="checkbox" />
+
+        <section id="login-session">
+            <label for="function-login" class="function-label">
+            </label>
+
+            <div class="wraper-floating-session card box-shadow">
+                <h2 class="material-h2">로그인<small></small></h2>
+                <div class="material-container">
+                    <form>
+                        <div class="group">
+                            <input class="material-input" type="text" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label class="material-label">아이디</label>
+                        </div>
+                        <div class="group">
+                            <input class="material-input" type="password" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label class="material-label">패스워드</label>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="register-session">
+            <label for="function-register" class="function-label">
+            </label>
+            <div class="wraper-floating-session">
+                <form class="card box-shadow">
+                    <input type="email" hint="이메일" />
+                    <input type="password" hint="패스워드" />
+                </form>
+            </div>
+        </section>
     </main>
 
 </body>
+
 </html>

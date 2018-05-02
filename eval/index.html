@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="static/css/login.css" />
     <link rel="stylesheet" href="static/css/register.css" />
-    <link rel="stylesheet" href="static/css/locker.css" />
+    <link rel="stylesheet" href="static/css/error.css" />
     <link rel="stylesheet" href="static/css/index.css" />
 
     <link rel="stylesheet" media="screen and (max-width: 996px)" href="static/css/index-mobile.css" />
@@ -90,7 +90,7 @@
                     </section>
                 </a>
                 <section class="nav-section box-shadow fade-in animated delay15 ">
-                    <label class="function-label" for="function-locker">
+                    <label class="function-label" for="function-error">
                         <div class="filter"></div>
                         <img src="static/nav_cabi_img.jpg" />
                         <p>사물함 신청</p>
@@ -110,7 +110,7 @@
 
         <input id="function-login" class="function-check" type="checkbox" />
         <input id="function-register" class="function-check" type="checkbox" />
-        <input id="function-locker" class="function-check" type="checkbox" />
+        <input id="function-error" class="function-check" type="checkbox" />
 
         <section id="login-session">
             <label for="function-login" class="function-label">
@@ -119,15 +119,15 @@
             <div class="wraper-floating-session card box-shadow">
                 <h2 class="material-h2">로그인<small></small></h2>
                 <div class="material-container">
-                    <form>
+                    <form action="https://ktis.kookmin.ac.kr/kmu/com.Login.do?" method="POST">
                         <div class="group">
-                            <input class="material-input" type="text" required>
+                            <input class="material-input" type="text" name="txt_user_id" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label class="material-label">아이디</label>
                         </div>
                         <div class="group">
-                            <input class="material-input" type="password" required>
+                            <input class="material-input" type="password" name="txt_passwd" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label class="material-label">패스워드</label>
@@ -149,7 +149,7 @@
             <div class="wraper-floating-session card box-shadow">
                 <h2 class="material-h2">회원가입<small></small></h2>
                 <div class="material-container">
-                    <form>
+                    <form action="">
                         <div class="group">
                             <input class="material-input" type="text" required>
                             <span class="highlight"></span>
@@ -169,24 +169,43 @@
                             <label class="material-label">패스워드 확인</label>
                         </div>
                         <div class="group material-submit-group">
-                            <button class="material-submit" type="submit">
-                                <span>회원가입</span>
-                                <div class="background"></div>
+                            <button class="material-submit" type="submit" disabled>
+                               <label for="function-error" class="function-label">
+                                    <span>회원가입</span>
+                                    <div class="background"></div>
+                                </label>
                             </button>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
-        <section id="locker-session">
-            <label for="function-locker" class="function-label">
+        <section id="error-session">
+            <label for="function-error" class="function-label">
             </label>
             <div class="wraper-floating-session card box-shadow">
-                아직 미구현된 기능입니다.
+
+                <h2 class="material-h2">현재 미구현<small></small></h2>
+
+                <div class="material-container">
+                    <form action="">
+
+                        <div class="group material-submit-group">
+                            <button class="material-submit" type="submit" disabled>
+                                    <label for="function-error" class="function-label">
+                                        <span>확인</span>
+                                        <div class="background"></div>
+                                    </label>
+                                         
+                                </button>
+                        </div>
+
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
 </body>
-    
+
 </html>

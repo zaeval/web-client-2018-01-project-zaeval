@@ -1,4 +1,4 @@
-#locker-session{
+#error-session{
     width:100%;
     height:100%;
     position:fixed;
@@ -27,18 +27,18 @@
     top:50%;
     transition: .3s;
 }
-#function-locker:checked ~ #locker-session{
+#function-error:checked ~ #error-session{
     z-index: 100;
     opacity: 1;
     transition: .3s;
 }
-#function-locker:checked ~ #locker-session .wraper-floating-session{
+#function-error:checked ~ #error-session .wraper-floating-session{
     width:500px;
-    height:400px;
+    height:250px;
     z-index: 120;
     opacity: 1;
     transition: .1s;
-    top:calc(50% - 200px);
+    top:calc(50% - 125px);
     transition-delay: .3s;
     
 }

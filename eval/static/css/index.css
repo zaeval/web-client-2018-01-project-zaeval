@@ -7,7 +7,12 @@ body {
     background-image: url("../ktis-background.png");
     background-size: cover;
 }
-
+html{
+    overflow-y: hidden;
+}
+*{
+    font-family: 'Roboto';
+}
 nav {
     text-align: center;
     z-index: 2;

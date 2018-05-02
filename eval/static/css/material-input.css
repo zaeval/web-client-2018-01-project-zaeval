@@ -14,16 +14,19 @@
 }
 
 .material-container {
-    font-family: 'Roboto';
     margin: 0 auto 0;
     display: inline-block;
     background: #FFF;
-    
+
 }
 
 .group {
     position: relative;
     margin-bottom: 45px;
+}
+
+.material-submit-group {
+    overflow: hidden;
 }
 
 .material-input {
@@ -33,6 +36,56 @@
     width: 300px;
     border: none;
     border-bottom: 1px solid #757575;
+}
+
+.material-submit {
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    display: block;
+    -webkit-appearance: none;
+    overflow: hidden;
+    background: #5264AE;
+    color: white;
+
+}
+
+.material-submit span {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left: calc(50% - 60px);
+    top: calc(50% - 10px);
+    text-align: center;
+    font-size: 15px;
+    z-index: 100;
+}
+
+.group .background {
+    background: rgba(255, 255, 255, .5);
+    width: 0%;
+    height: 0%;
+    margin: auto;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 0;
+
+}
+
+.material-submit:active .background {
+    transition: 0.5s all;
+    border-radius: 0%;
+    width: 500px;
+    height: 500px;
+    left: calc(50% - 250px);
+    top: calc(50% - 250px);
+}
+
+.material-submit:active {
+    transition: 0.5s all;
+    color: #5264AE;
 }
 
 .material-input:focus {
@@ -48,14 +101,12 @@
     left: 5px;
     top: 10px;
     transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
 }
 
 /* active state */
 
-.material-input:focus ~ label,
-.material-input:valid ~ label {
+.material-input:focus ~ .material-label,
+.material-input:valid ~ .material-label {
     top: -20px;
     font-size: 14px;
     color: #5264AE;
@@ -105,27 +156,6 @@
 
 .material-input:focus ~ .highlight {
     animation: inputHighlighter 0.3s ease;
-}
-
-
-@-webkit-keyframes inputHighlighter {
-    from {
-        background: #5264AE;
-    }
-    to {
-        width: 0;
-        background: transparent;
-    }
-}
-
-@-moz-keyframes inputHighlighter {
-    from {
-        background: #5264AE;
-    }
-    to {
-        width: 0;
-        background: transparent;
-    }
 }
 
 @keyframes inputHighlighter {

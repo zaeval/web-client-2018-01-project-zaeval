@@ -10,10 +10,12 @@
 
     <link rel="stylesheet" href="static/css/login.css" />
     <link rel="stylesheet" href="static/css/register.css" />
+    <link rel="stylesheet" href="static/css/locker.css" />
     <link rel="stylesheet" href="static/css/index.css" />
 
     <link rel="stylesheet" media="screen and (max-width: 996px)" href="static/css/index-mobile.css" />
 
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="static/css/material-input.css" />
     <link rel="stylesheet" href="static/css/function.css" />
@@ -56,8 +58,8 @@
                     <div class="banner-indicators box-shadow"><label for="second-banner-right-button-check"></label></div>
                     <div class="banner-indicators box-shadow"><label for="third-banner-right-button-check"></label></div>
 
-
                 </section>
+
                 <section id="nav-login" class="nav-section box-shadow fade-in animated delay3 ">
                     <label class="function-label" for="function-login">
                         <div class="filter"></div>
@@ -65,6 +67,7 @@
                         <p>로그인</p>
                     </label>
                 </section>
+
                 <section class="nav-section box-shadow fade-in animated delay6 ">
                     <label class="function-label" for="function-register">
                         <div class="filter"></div>
@@ -72,21 +75,28 @@
                         <p>회원가입</p>
                     </label>
                 </section>
-                <section class="nav-section box-shadow fade-in animated delay9 ">
-                    <div class="filter"></div>
-                    <img src="static/nav_lecture_img.jpg" />
-                    <p class="two-line">수강 모의<br> 신청</p>
-                </section>
-                <section class="nav-section box-shadow fade-in animated delay12 ">
-                    <div class="filter"></div>
-                    <img src="static/nav_plan_img.png" />
-                    <p class="two-line">강의 계획서<br> 열람</p>
-                </section>
+                <a href="https://ktis.kookmin.ac.kr/kmu/usb.Usb0902eAGet01.do" target="_blank">
+                    <section class="nav-section box-shadow fade-in animated delay9 ">
+                        <div class="filter"></div>
+                        <img src="static/nav_lecture_img.jpg" />
+                        <p class="two-line">수강 모의<br> 신청</p>
+                    </section>
+                </a>
+                <a href="https://ktis.kookmin.ac.kr/kmu/ucb.Ucb0162rAGet01.do" target="_blank">
+                    <section class="nav-section box-shadow fade-in animated delay12 ">
+                        <div class="filter"></div>
+                        <img src="static/nav_plan_img.png" />
+                        <p class="two-line">강의 계획서<br> 열람</p>
+                    </section>
+                </a>
                 <section class="nav-section box-shadow fade-in animated delay15 ">
-                    <div class="filter"></div>
-                    <img src="static/nav_cabi_img.jpg" />
-                    <p>사물함 신청</p>
+                    <label class="function-label" for="function-locker">
+                        <div class="filter"></div>
+                        <img src="static/nav_cabi_img.jpg" />
+                        <p>사물함 신청</p>
+                    </label>
                 </section>
+
                 <section class="nav-section nav-footer box-shadow fade-in animated delay18">
                     <footer>
                         <div class="multiline">
@@ -94,10 +104,13 @@
                         </div>
                     </footer>
                 </section>
+
             </div>
         </nav>
+
         <input id="function-login" class="function-check" type="checkbox" />
         <input id="function-register" class="function-check" type="checkbox" />
+        <input id="function-locker" class="function-check" type="checkbox" />
 
         <section id="login-session">
             <label for="function-login" class="function-label">
@@ -119,8 +132,13 @@
                             <span class="bar"></span>
                             <label class="material-label">패스워드</label>
                         </div>
+                        <div class="group material-submit-group">
+                            <button class="material-submit" type="submit">
+                                <span>로그인</span>
+                                <div class="background"></div>
+                            </button>
+                        </div>
                     </form>
-
                 </div>
             </div>
         </section>
@@ -128,15 +146,47 @@
         <section id="register-session">
             <label for="function-register" class="function-label">
             </label>
-            <div class="wraper-floating-session">
-                <form class="card box-shadow">
-                    <input type="email" hint="이메일" />
-                    <input type="password" hint="패스워드" />
-                </form>
+            <div class="wraper-floating-session card box-shadow">
+                <h2 class="material-h2">회원가입<small></small></h2>
+                <div class="material-container">
+                    <form>
+                        <div class="group">
+                            <input class="material-input" type="text" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label class="material-label">아이디</label>
+                        </div>
+                        <div class="group">
+                            <input class="material-input" type="password" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label class="material-label">패스워드</label>
+                        </div>
+                        <div class="group">
+                            <input class="material-input" type="password" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label class="material-label">패스워드 확인</label>
+                        </div>
+                        <div class="group material-submit-group">
+                            <button class="material-submit" type="submit">
+                                <span>회원가입</span>
+                                <div class="background"></div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="locker-session">
+            <label for="function-locker" class="function-label">
+            </label>
+            <div class="wraper-floating-session card box-shadow">
+                아직 미구현된 기능입니다.
             </div>
         </section>
     </main>
 
 </body>
-
+    
 </html>

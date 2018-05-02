@@ -1,4 +1,4 @@
-#login-session{
+#locker-session{
     width:100%;
     height:100%;
     position:fixed;
@@ -27,12 +27,12 @@
     top:50%;
     transition: .3s;
 }
-#function-login:checked ~ #login-session{
+#function-locker:checked ~ #locker-session{
     z-index: 100;
     opacity: 1;
     transition: .3s;
 }
-#function-login:checked ~ #login-session .wraper-floating-session{
+#function-locker:checked ~ #locker-session .wraper-floating-session{
     width:500px;
     height:400px;
     z-index: 120;

@@ -1,0 +1,34 @@
+.popup-session{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,.3);
+    text-align: center;
+    z-index: 0;
+    opacity: 0;
+
+}
+.card{
+    width:100%;
+    height:100%;
+}
+.wraper-floating-session{
+    background: #fff;
+    border-radius: 2px;
+    width:0px;
+    height:0px;
+    display:inline-block;
+    position:relative;
+    z-index: 120;
+    opacity: 0;
+    top:50%;
+}
+.top-of-z-index{
+    z-index: 120;
+    
+}
+.wraper-floating-session *{
+    opacity: 0;
+}

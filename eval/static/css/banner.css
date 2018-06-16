@@ -39,91 +39,17 @@
 .nav-banner .left-button {
     left: 0;
     color: #E8EAF6;
-background: linear-gradient(to right, rgba(16,16,16,0.5) 0%, rgba(16,16,16,0) 100%);
-    
+    font-size: 30px;
+    background: linear-gradient(to right, rgba(16,16,16,0.5) 0%, rgba(16,16,16,0) 100%);
 }
 
 .nav-banner .right-button {
     right: 0;
     float: right;
-    
     color: #E8EAF6;
+    font-size: 30px;
+    
     background: linear-gradient(to left, rgba(16,16,16,0.5) 0%, rgba(16,16,16,0) 100%);
-}
-
-#second-banner-right-button-check:checked ~ #banner-second {
-    animation-name: fadeInRight;
-    animation-duration: .5s;
-    animation-fill-mode: both;
-}
-
-#second-banner-right-button-check:checked ~ #banner-first {
-    animation-name: fadeOutLeft;
-    animation-duration: .5s;
-    animation-fill-mode: both;
-}
-
-#first-banner-right-button-check:checked ~ #banner-first {
-    animation-name: fadeInRight;
-    animation-duration: .5s;
-    animation-fill-mode: both;
-}
-
-#first-banner-right-button-check:checked ~ #banner-third {
-    animation-name: fadeOutLeft;
-    animation-duration: .5s;
-    animation-fill-mode: both;
-}
-
-#third-banner-right-button-check:checked ~ #banner-third {
-    animation-name: fadeInRight;
-    animation-duration: .5s;
-    animation-fill-mode: both;
-}
-
-#third-banner-right-button-check:checked ~ #banner-second {
-    animation-name: fadeOutLeft;
-    animation-duration: .5s;
-    animation-fill-mode: both;
-}
-#first-banner-left-button-check:checked ~ #banner-first {
-    animation-name: fadeInLeft;
-    animation-duration: .5s;
-    animation-fill-mode: both;
-}
-
-#first-banner-left-button-check:checked ~ #banner-second {
-    animation-name: fadeOutRight;
-    animation-duration: .5s;
-    animation-fill-mode: both;
-}
-
-#second-banner-left-button-check:checked ~ #banner-second {
-    animation-name: fadeInLeft;
-    animation-duration: .5s;
-    animation-fill-mode: both;
-}
-
-#second-banner-left-button-check:checked ~ #banner-third {
-    animation-name: fadeOutRight;
-    animation-duration: .5s;
-    animation-fill-mode: both;
-}
-
-#third-banner-left-button-check:checked ~ #banner-third {
-    animation-name: fadeInLeft;
-    animation-duration: .5s;
-    animation-fill-mode: both;
-}
-
-#third-banner-left-button-check:checked ~ #banner-first {
-    animation-name: fadeOutRight;
-    animation-duration: .5s;
-    animation-fill-mode: both;
-}
-
-#banner-first {
-    left: 0;
 }
 
 .banner-indicators {
@@ -137,55 +63,6 @@ background: linear-gradient(to right, rgba(16,16,16,0.5) 0%, rgba(16,16,16,0) 10
     position: relative;
     transition: .3s;
 }
-
-#first-banner-right-button-check:checked ~ .banner-indicators:nth-of-type(1) {
-    border-radius: 3px;
-    width: 8px;
-    height: 8px;
-    background-color: #283593;
-    transition: .3s;
-}
-
-#second-banner-right-button-check:checked ~ .banner-indicators:nth-of-type(2) {
-    border-radius: 3px;
-    width: 8px;
-    height: 8px;
-    transition: .3s;    
-    background-color: #283593;
-}
-
-#third-banner-right-button-check:checked ~ .banner-indicators:nth-of-type(3) {
-    border-radius: 3px;
-    width: 8px;
-    height: 8px;
-    transition: .3s;
-    background-color: #283593;
-}
-
-#first-banner-left-button-check:checked ~ .banner-indicators:nth-of-type(1) {
-    border-radius: 3px;
-    width: 8px;
-    height: 8px;
-    transition: .3s;
-    background-color: #283593;
-}
-
-#second-banner-left-button-check:checked ~ .banner-indicators:nth-of-type(2) {
-    border-radius: 3px;
-    width: 8px;
-    height: 8px;
-    transition: .3s;
-    background-color: #283593;
-}
-
-#third-banner-left-button-check:checked ~ .banner-indicators:nth-of-type(3) {
-    border-radius: 3px;
-    width: 8px;
-    height: 8px;
-    transition: .3s;
-    background-color: #283593;
-}
-
 
 .banner-indicators label{
     width: 100%;

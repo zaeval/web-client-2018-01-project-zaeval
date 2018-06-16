@@ -4,7 +4,6 @@ body {
     width: 100%;
     margin: 0;
     overflow-x: hidden;
-    background-image: url("../ktis-background.png");
     background-size: cover;
 }
 html{

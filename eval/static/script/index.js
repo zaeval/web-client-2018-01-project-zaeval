@@ -1,5 +1,5 @@
 var delay = 300;
-var server_domain = "http://kmusw-1041418999.ap-northeast-2.elb.amazonaws.com/";
+var server_domain = "https://beautiself.ga/";
 var banners = new Array();
 var temp;
 var notCompleteSections = new Array();

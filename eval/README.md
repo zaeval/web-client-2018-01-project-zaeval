@@ -249,7 +249,7 @@ body
     
     django의 서버는 이번 수업에선 웹클라이언트 수업이기 때문에 필요한 요소들만 다루도록 한다.
     
-    http://kmusw-1041418999.ap-northeast-2.elb.amazonaws.com/admin/
+    https://beautiself.ga/admin/
     
     이 주소가 django에서 지원하는 완성된 admin app부분이다. 
     
@@ -266,7 +266,7 @@ body
     
     이렇게 추가한 데이터들을 
     
-    http://kmusw-1041418999.ap-northeast-2.elb.amazonaws.com/api/banner
+    https://beautiself.ga/banner
     
     ![](screenshot/5.png)
     
@@ -364,7 +364,7 @@ body
         }
     });
     ```
-    http://kmusw-1041418999.ap-northeast-2.elb.amazonaws.com/api/banner 에 http request를 보내고 받은 json을 파싱해서 banner를 생성해주고 초기 세팅을 해준 것이다.
+    https://beautiself.ga/banner 에 http request를 보내고 받은 json을 파싱해서 banner를 생성해주고 초기 세팅을 해준 것이다.
     
      #### index.js
     ```javascript

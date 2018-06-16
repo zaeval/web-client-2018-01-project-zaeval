@@ -26,7 +26,7 @@ body
 * ### 기존 nav-section 부분들 animation-delay
 
     #### index.html
-    ```
+    ```html
     <section class="nav-section box-shadow fade-in animated delay3 ">    
     <section class="nav-section box-shadow fade-in animated delay6 ">    
     <section class="nav-section box-shadow fade-in animated delay9 ">    
@@ -34,7 +34,7 @@ body
     ...
     ```
     #### index.css
-    ```
+    ```css
     .delay3 {
         animation-delay: .3s;
     }
@@ -56,7 +56,7 @@ body
     
     이와 같은 이유로 확장성에 대해서 매우 불편 할 수 있기 때문에 다음과 같이 바꾸어 주었다.
     #### index.html
-    ```
+    ```html
     <head>
         ...
         <script src="static/index.js"/>
@@ -72,7 +72,7 @@ body
     </body>
     ```
     #### index.js
-    ```
+    ```javascript
     var delay = 300;
     $(document).ready(
         function(){
@@ -105,7 +105,7 @@ body
 
     #### index.js
     
-    ```
+    ```javascript
     var delay = 300;
     $(document).ready(
         function () {

@@ -118,30 +118,6 @@ footer:hover div{
     width: 996px;
 }
 
-.delay3 {
-    animation-delay: .3s;
-}
-
-.delay6 {
-    animation-delay: .6s;
-}
-
-.delay9 {
-    animation-delay: .9s;
-}
-
-.delay12 {
-    animation-delay: 1.2s;
-}
-
-.delay15 {
-    animation-delay: 1.5s;
-}
-
-.delay18 {
-    animation-delay: 1.8s;
-}
-
 nav section {
     overflow: hidden;
 }

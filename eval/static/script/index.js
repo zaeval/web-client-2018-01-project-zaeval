@@ -1,4 +1,4 @@
-let delay = 300;
+var delay = 300;
 $(document).ready(
 
     function () {
@@ -9,7 +9,7 @@ $(document).ready(
             $('body').fadeIn(1500, function () {
                     var navMenus = $(".nav-wrapper").find('section');
                     for (var i = 0; i < navMenus.length; ++i) {
-                        let second = delay * i / 1000;
+                        var second = delay * i / 1000;
                         $(navMenus[i]).css({
                             'animation-delay': second + 's',
                             'display': 'inline-block'
